@@ -1,55 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"> <!-- Deklarasi tipe dokumen HTML5 dan bahasa halaman Inggris -->
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Calculator</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8"> <!-- Menentukan karakter encoding sebagai UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Membuat halaman responsif terhadap ukuran layar -->
+    <title>Simple Calculator</title> <!-- Menentukan judul halaman -->
+    <link rel="stylesheet" href="style.css"> <!-- Menghubungkan file CSS eksternal untuk styling -->
 </head>
-<body>
-    <div class="dropdown">
-        <button>Calculator App</button>
-        <div class="dropdown-content">
-          <a href="#">Standard</a>
+<body> <!-- Awal konten halaman -->
+    <div class="dropdown"> <!-- Container untuk dropdown menu -->
+        <button>Calculator App</button> <!-- Tombol untuk membuka menu dropdown -->
+        <div class="dropdown-content"> <!-- Konten dropdown yang muncul saat tombol diklik -->
+          <a href="#">Standard</a> <!-- Link untuk kalkulator standar -->
           <a href="temperature.html">Temperature</a>
+          <a href="logika.html">Algoritma</a> <!-- Link untuk kalkulator suhu -->
         </div>
     </div>
-    <div class="calculator">
-        <div class="display">
-            <input type="text" id="display" disabled>
+    <div class="calculator"> <!-- Container utama untuk kalkulator -->
+        <div class="display"> <!-- Bagian layar kalkulator -->
+            <input type="text" id="display" disabled> <!-- Input teks untuk menampilkan angka atau hasil, tidak bisa diubah pengguna -->
         </div>
-        <div class="buttons">
-            <button onclick="clearDisplay()">C</button>
-            <button onclick="backspace()">⌫</button>
-            <button onclick="percentage()">%</button>
-            <button onclick="appendToDisplay('+')">+</button>
-            <button onclick="appendToDisplay('7')">7</button>
-            <button onclick="appendToDisplay('8')">8</button>
-            <button onclick="appendToDisplay('9')">9</button>
-            <button onclick="appendToDisplay('/')">÷</button>
-            <button onclick="appendToDisplay('4')">4</button>
-            <button onclick="appendToDisplay('5')">5</button>
-            <button onclick="appendToDisplay('6')">6</button>
-            <button onclick="appendToDisplay('*')">×</button>
-            <button onclick="appendToDisplay('1')">1</button>
-            <button onclick="appendToDisplay('2')">2</button>
-            <button onclick="appendToDisplay('3')">3</button>
-            <button onclick="appendToDisplay('-')">-</button>
-            <button onclick="appendToDisplay('0')">0</button>
-            <button onclick="appendToDisplay('00')">00</button>
-            <button onclick="appendToDisplay('.')">.</button>
-            <button onclick="calculate()">=</button>
+        <div class="buttons"> <!-- Bagian untuk tombol kalkulator -->
+            <button onclick="clearDisplay()">C</button> <!-- Tombol untuk menghapus semua isi layar -->
+            <button onclick="backspace()">⌫</button> <!-- Tombol untuk menghapus karakter terakhir -->
+            <button onclick="percentage()">%</button> <!-- Tombol untuk menghitung persentase -->
+            <button onclick="appendToDisplay('+')">+</button> <!-- Tombol untuk menambahkan operator '+' ke layar -->
+            <button onclick="appendToDisplay('7')">7</button> <!-- Tombol angka 7 -->
+            <button onclick="appendToDisplay('8')">8</button> <!-- Tombol angka 8 -->
+            <button onclick="appendToDisplay('9')">9</button> <!-- Tombol angka 9 -->
+            <button onclick="appendToDisplay('/')">÷</button> <!-- Tombol untuk menambahkan operator '/' ke layar -->
+            <button onclick="appendToDisplay('4')">4</button> <!-- Tombol angka 4 -->
+            <button onclick="appendToDisplay('5')">5</button> <!-- Tombol angka 5 -->
+            <button onclick="appendToDisplay('6')">6</button> <!-- Tombol angka 6 -->
+            <button onclick="appendToDisplay('*')">×</button> <!-- Tombol untuk menambahkan operator '*' ke layar -->
+            <button onclick="appendToDisplay('1')">1</button> <!-- Tombol angka 1 -->
+            <button onclick="appendToDisplay('2')">2</button> <!-- Tombol angka 2 -->
+            <button onclick="appendToDisplay('3')">3</button> <!-- Tombol angka 3 -->
+            <button onclick="appendToDisplay('-')">-</button> <!-- Tombol untuk menambahkan operator '-' ke layar -->
+            <button onclick="appendToDisplay('0')">0</button> <!-- Tombol angka 0 -->
+            <button onclick="appendToDisplay('00')">00</button> <!-- Tombol angka 00 -->
+            <button onclick="appendToDisplay('.')">.</button> <!-- Tombol titik desimal -->
+            <button onclick="calculate()">=</button> <!-- Tombol untuk menghitung hasil (menjalankan fungsi 'calculate') -->
         </div>
-        <div class="history">
-            <div class="history-header">
-                <h2>History</h2>
-                <button onclick="clearHistory()" class="clear-history">
-                    <img src="iconHistory.png" alt="Clear History" class="icon-trash">
+        <div class="history"> <!-- Bagian untuk riwayat kalkulasi -->
+            <div class="history-header"> <!-- Header untuk bagian riwayat -->
+                <h2>History</h2> <!-- Judul untuk bagian riwayat -->
+                <button onclick="clearHistory()" class="clear-history"> <!-- Tombol untuk menghapus semua riwayat -->
+                    <img src="iconHistory.png" alt="Clear History" class="icon-trash"> <!-- Ikon untuk tombol hapus riwayat -->
                 </button>                
             </div>
-            <ul id="history"></ul>
+            <ul id="history"></ul> <!-- Daftar kosong untuk menampilkan riwayat kalkulasi -->
         </div>                 
     </div>
-    <script src="script.js"></script>
+    <script src="script.js"></script> <!-- Menghubungkan file JavaScript eksternal untuk logika kalkulator -->
 </body>
-</html>
+</html> <!-- Akhir dokumen HTML -->

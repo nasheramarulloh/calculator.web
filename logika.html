@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animasi Teks pada Klik Gambar</title>
+    <link rel="stylesheet" href="logika.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dropdown"> <!-- Container untuk dropdown menu -->
+        <button>Calculator App</button> <!-- Tombol untuk membuka menu dropdown -->
+        <div class="dropdown-content"> <!-- Konten dropdown yang muncul saat tombol diklik -->
+          <a href="index.html">Standard</a> <!-- Link untuk kalkulator standar -->
+          <a href="temperature.css">Temperature</a>
+          <a href="#">Algoritma</a> <!-- Link untuk kalkulator suhu -->
+        </div>
+    </div>
+    <div class="container" onclick="toggleText('text1')">
+        <img src="flowchartstandar.png" alt="Flowchart Standar">
+        <div class="text" id="text1">Flowchart Standard</div>
+    </div>
+    
+    <div class="container" onclick="toggleText('text2')">
+        <img src="flowcharthistory.png" alt="Flowchart History">
+        <div class="text" id="text2">Flowchart History</div>
+    </div>    
+</body>
+<script src="algoritma.js"></script>
+</html>
